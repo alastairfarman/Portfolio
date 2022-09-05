@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0d17856d.css",
+    "main.js": "/static/js/main.dbce7192.js",
+    "static/media/BNShade.otf": "/static/media/BNShade.5104ca37686be9ceffa2.otf",
+    "index.html": "/index.html",
+    "main.0d17856d.css.map": "/static/css/main.0d17856d.css.map",
+    "main.dbce7192.js.map": "/static/js/main.dbce7192.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d17856d.css",
+    "static/js/main.dbce7192.js"
+  ]
+}
