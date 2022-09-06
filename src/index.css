@@ -3,33 +3,44 @@
 }
 
 @font-face {
-  font-family: BN-Shade;
-  src: url(../public/assets/fonts/BNShade.otf);
+  font-family: 'BN-Shade';
+  src: url('../public/assets/fonts/BNShade.otf');
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: 'BN-Burough';
+  src: url('../public/assets/fonts/BNBurough-Clean.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap');
+
 
 main {
-  font-family: Inter;
+  font-family: Heebo;
+  font-size: 1.2rem;
+  font-weight: 200;
   display: flex;
   justify-content: space-evenly;
   color: #2a2b2a;
 }
 
 h1 {
-  font-family: BN-Shade;
-  font-size: 6vw;
+  font-family: BN-Burough;
+  font-size: clamp(2rem, 6vw, 4rem);
   transition: all ease-in-out 1s;
   border-bottom: solid 0.5rem #2694b2;
 }
 
 .minimised h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: all ease-in-out 1s;
 }
 
 h2 {
-  font-family: BN-Shade;
+  font-family: BN-Burough;
+  font-size: clamp(2rem, 6vw, 4rem); 
+  letter-spacing: 0.08rem;
   transition: all ease-in-out 1s;
   text-align: center;
   padding: 1rem 1rem 1rem 0;
@@ -37,16 +48,14 @@ h2 {
 }
 
 .minimised h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
   transform: rotate(90deg);
   transition: all ease-in-out 1s;
 }
 
 h3 {
   font-weight: 300;
-}
-
-p {
-  font-family: Inter, sans-serif;
 }
 
 summary {
@@ -160,10 +169,11 @@ hr {
   scroll-snap-type: y proximity;
 }
 
-#selector-about .scroll-area {
-  max-width: 600px;
+#selector-about .scroll-area p {
+  max-width: 1000px;
   align-self: center;
   text-align: start;
+  margin: 1rem;
 }
 
 .scroll-area img {
@@ -286,6 +296,10 @@ hr {
     padding: 0;
   }
 
+  h2{
+    font-size: 9vw;
+  }
+
   #hamburger {
     position: fixed;
     right: 1rem;
@@ -294,6 +308,7 @@ hr {
     padding: 0.5rem;
     background-color: rgba(245, 245, 245, 0.95);
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
     transition: box-shadow 0.2s ease-in-out;
   }
 

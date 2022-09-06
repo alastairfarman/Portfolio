@@ -56,6 +56,7 @@ function About() {
           </ul>
           <br />
           <h3>Employers and Clients</h3>
+          <br />
           <span>
             Net-A-Porter, Mr Porter, Urban Outfitters, Dr Martens, AllSaints
           </span>
