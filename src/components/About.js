@@ -20,15 +20,20 @@ function About() {
           retailer, quickly moving into photography and retouch.
           <br />
           <br />
-          In addition to recently going freelance, I have worked in various in-house photography studio roles, as a
-          senior retoucher and photographer primarily leading workflow
-          processes, QC, and ecommerce product image art direction.
+          In addition to recently going freelance, I have worked in various
+          in-house photography studio roles, as a senior retoucher and
+          photographer primarily leading workflow processes, QC, and ecommerce
+          product image art direction.
           <br />
           <br />
-          Over the past few months I have thrown myself into becoming a self-taught frontend web developer, mainly via The Odin Project curriculum and other helpful resources.
+          Since June 2022 I have thrown myself into becoming a self-taught
+          frontend web developer, mainly via The Odin Project curriculum and
+          other helpful resources.
           <br />
           <br />
-          I have also learned the fundamentals of 3D software, playing with Blender both for fun and to test ideas for profesional work as the industry progresses.
+          I have also learned the fundamentals of 3D software, playing with
+          Blender both for fun and to test ideas for profesional work as the
+          industry progresses.
           <br />
           <br />
           <h3>Software</h3>
@@ -49,7 +54,6 @@ function About() {
             <li>React.js</li>
             <li>Webpack</li>
           </ul>
-
           <br />
           <h3>Employers and Clients</h3>
           <span>

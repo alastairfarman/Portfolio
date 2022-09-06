@@ -5,7 +5,7 @@ import addActiveClass from "./addActiveClass";
 
 function Photography() {
   const TractProject = [
-    { imgURL: "/assets/img/TR/5.jpg", key: "1" },
+    { imgURL: "./assets/img/TR/5.jpg", key: "1" },
     { imgURL: "/assets/img/TR/2.jpg", key: "2" },
     { imgURL: "/assets/img/TR/3.jpg", key: "3" },
     { imgURL: "/assets/img/TR/4.jpg", key: "4" },
