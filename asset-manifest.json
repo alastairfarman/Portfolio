@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.e56974c2.css",
+    "main.css": "./static/css/main.148b16ce.css",
     "main.js": "./static/js/main.d263b96c.js",
     "static/media/BNShade.otf": "./static/media/BNShade.5104ca37686be9ceffa2.otf",
     "index.html": "./index.html",
-    "main.e56974c2.css.map": "./static/css/main.e56974c2.css.map",
+    "main.148b16ce.css.map": "./static/css/main.148b16ce.css.map",
     "main.d263b96c.js.map": "./static/js/main.d263b96c.js.map"
   },
   "entrypoints": [
-    "static/css/main.e56974c2.css",
+    "static/css/main.148b16ce.css",
     "static/js/main.d263b96c.js"
   ]
 }
