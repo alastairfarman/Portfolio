@@ -63,7 +63,7 @@ function Frontend() {
     <div className="module minimised" id="selector-frontend">
       <h1>02</h1>
       <h2>Frontend</h2>
-      <div className="select" onClick={(e) => addActiveClass(e, "frontend")}>
+      <div className="select" id="frontend-open" onClick={(e) => addActiveClass(e, "frontend")}>
         open
       </div>
       <div className="scroll-area">

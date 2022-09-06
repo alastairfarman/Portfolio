@@ -1,3 +1,5 @@
+import addActiveClass from "./addActiveClass";
+
 export default function Hamburger() {
   function changeOpenState() {
     const hamburgerMenu = document.getElementById("hamburger");
@@ -17,16 +19,14 @@ export default function Hamburger() {
     }
   }
 
-  
-
   return (
     <div id="hamburger" className="closed" onClick={changeOpenState}>
       <ul>
-        <li>About</li>
-        <li>Frontend</li>
-        <li>Retouch</li>
-        <li>Photography</li>
-        <li>3D</li>
+        <li onClick={(e) => addActiveClass(e, "about")}>About</li>
+        <li onClick={(e) => addActiveClass(e, "frontend")}>Frontend</li>
+        <li onClick={(e) => addActiveClass(e, "retouch")}>Retouch</li>
+        <li onClick={(e) => addActiveClass(e, "photography")}>Photography</li>
+        <li onClick={(e) => addActiveClass(e, "3d")}>3D</li>
       </ul>
     </div>
   );

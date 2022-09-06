@@ -27,7 +27,11 @@ function ThreeD() {
     <div className="module minimised" id="selector-3d">
       <h1>05</h1>
       <h2>3D</h2>
-      <div className="select" onClick={(e) => addActiveClass(e, "3d")}>
+      <div
+        className="select"
+        id="3d-open"
+        onClick={(e) => addActiveClass(e, "3d")}
+      >
         open
       </div>
       <div className="scroll-area">

@@ -14,7 +14,7 @@ function App() {
       <Retouch />
       <Photography />
       <ThreeD />
-      <Hamburger/>
+      <Hamburger />
     </main>
   );
 }

@@ -3,7 +3,6 @@ import Project from "./Project";
 import addActiveClass from "./addActiveClass";
 
 function Retouch() {
-
   const MJ1Project = [
     { imgURL: "/assets/img/MJ1/1.jpg", key: "1" },
     { imgURL: "/assets/img/MJ1/2.jpg", key: "2" },
@@ -43,7 +42,11 @@ function Retouch() {
     <div className="module minimised" id="selector-retouch">
       <h1>03</h1>
       <h2>Retouch</h2>
-      <div className="select" onClick={(e) => addActiveClass(e, "retouch")}>
+      <div
+        className="select"
+        id="retouch-open"
+        onClick={(e) => addActiveClass(e, "retouch")}
+      >
         open
       </div>
       <div className="scroll-area">
@@ -57,11 +60,7 @@ function Retouch() {
           collection={true}
           description={"Schön Magazine"}
         />
-        <Project
-          data={MJ4Project}
-          collection={true}
-          description={"HungerTV"}
-        />
+        <Project data={MJ4Project} collection={true} description={"HungerTV"} />
         <Project
           data={MJ7Project}
           collection={true}

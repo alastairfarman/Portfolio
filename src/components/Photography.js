@@ -4,7 +4,6 @@ import Video from "./Video";
 import addActiveClass from "./addActiveClass";
 
 function Photography() {
-
   const TractProject = [
     { imgURL: "/assets/img/TR/5.jpg", key: "1" },
     { imgURL: "/assets/img/TR/2.jpg", key: "2" },
@@ -63,7 +62,11 @@ function Photography() {
     <div className="module minimised" id="selector-photography">
       <h1>04</h1>
       <h2>Photography</h2>
-      <div className="select" onClick={(e) => addActiveClass(e, "photography")}>
+      <div
+        className="select"
+        id="photography-open"
+        onClick={(e) => addActiveClass(e, "photography")}
+      >
         open
       </div>
       <div className="scroll-area">
@@ -98,8 +101,11 @@ function Photography() {
           description={"Dr Martens Catalog"}
         />
         <Project data={ADProject} collection={true} description={"Other"} />
-        
-        <Video videoID={1} description={"Dr Martens - Aging Raw Leather Demonstration"} />
+
+        <Video
+          videoID={1}
+          description={"Dr Martens - Aging Raw Leather Demonstration"}
+        />
       </div>
     </div>
   );
