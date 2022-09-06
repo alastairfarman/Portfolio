@@ -5,22 +5,22 @@ import addActiveClass from "./addActiveClass";
 
 function ThreeD() {
   const DinerProject = [
-    { imgURL: "/assets/img/DNR/2.png" },
-    { imgURL: "/assets/img/DNR/5.png" },
-    { imgURL: "/assets/img/DNR/1.png" },
-    { imgURL: "/assets/img/DNR/3.png" },
-    { imgURL: "/assets/img/DNR/6.png" },
-    { imgURL: "/assets/img/DNR/4.png" },
+    { imgURL: "./assets/img/DNR/2.png" },
+    { imgURL: "./assets/img/DNR/5.png" },
+    { imgURL: "./assets/img/DNR/1.png" },
+    { imgURL: "./assets/img/DNR/3.png" },
+    { imgURL: "./assets/img/DNR/6.png" },
+    { imgURL: "./assets/img/DNR/4.png" },
   ];
 
-  const ProductProject = [{ imgURL: "/assets/img/3X/1.png" }];
+  const ProductProject = [{ imgURL: "./assets/img/3X/1.png" }];
 
   const SNProject = [
-    { imgURL: "/assets/img/SN/1.png" },
-    { imgURL: "/assets/img/SN/2.png" },
-    { imgURL: "/assets/img/SN/3.png" },
-    { imgURL: "/assets/img/SN/4.png" },
-    { imgURL: "/assets/img/SN/5.png" },
+    { imgURL: "./assets/img/SN/1.png" },
+    { imgURL: "./assets/img/SN/2.png" },
+    { imgURL: "./assets/img/SN/3.png" },
+    { imgURL: "./assets/img/SN/4.png" },
+    { imgURL: "./assets/img/SN/5.png" },
   ];
 
   return (
