@@ -230,7 +230,6 @@ hr {
   background-color: #fff;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  padding: 1rem;
 }
 
 .arrange img {
@@ -278,9 +277,9 @@ hr {
     display: none;
   }
 
-  .module, .scroll-area img {
+  .module,
+  .scroll-area img {
     transition: none;
-    width: 100%;
   }
 
   .scroll-area {
@@ -358,6 +357,4 @@ hr {
   #hamburger ul li:last-child:hover {
     margin-bottom: 0.7rem;
   }
-
- 
 }
