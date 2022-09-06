@@ -1,5 +1,6 @@
 import React from "react";
 import FrontendModule from "./FrontendModule";
+import addActiveClass from "./addActiveClass";
 
 const FrontendProjects = [
   {
@@ -57,31 +58,12 @@ const FrontendProjects = [
 ];
 
 function Frontend() {
-  function addActiveClass(e) {
-    let modules = document.getElementsByClassName("module");
-    let thisModule = document.getElementById("selector-frontend");
-    for (let module of modules) {
-      module.setAttribute("class", "module minimised");
-    }
-    thisModule.setAttribute("class", "module active");
-    let selectors = document.getElementsByClassName("select");
-    for (let selector of selectors) {
-      selector.setAttribute("class", "select");
-    }
-    e.target.setAttribute("class", "select hidden");
-
-    let scrollareas = document.getElementsByClassName("scroll-area");
-    for (let scrollarea of scrollareas) {
-      scrollarea.setAttribute("class", "scroll-area hidden");
-    }
-    thisModule.lastChild.setAttribute("class", "scroll-area frontend");
-  }
-
+ 
   return (
-    <div className="module" id="selector-frontend">
+    <div className="module minimised" id="selector-frontend">
       <h1>02</h1>
       <h2>Frontend</h2>
-      <div className="select" onClick={addActiveClass}>
+      <div className="select" onClick={(e) => addActiveClass(e, "frontend")}>
         open
       </div>
       <div className="scroll-area">

@@ -1,27 +1,9 @@
 import React from "react";
 import Project from "./Project";
 import Video from "./Video";
+import addActiveClass from "./addActiveClass";
 
 function Photography() {
-  function addActiveClass(e) {
-    let modules = document.getElementsByClassName("module");
-    let thisModule = document.getElementById("selector-photography");
-    for (let module of modules) {
-      module.setAttribute("class", "module minimised");
-    }
-    thisModule.setAttribute("class", "module active");
-    let selectors = document.getElementsByClassName("select");
-    for (let selector of selectors) {
-      selector.setAttribute("class", "select");
-    }
-    e.target.setAttribute("class", "select hidden");
-
-    let scrollareas = document.getElementsByClassName("scroll-area");
-    for (let scrollarea of scrollareas) {
-      scrollarea.setAttribute("class", "scroll-area hidden");
-    }
-    thisModule.lastChild.setAttribute("class", "scroll-area");
-  }
 
   const TractProject = [
     { imgURL: "/assets/img/TR/5.jpg", key: "1" },
@@ -78,10 +60,10 @@ function Photography() {
   ];
 
   return (
-    <div className="module" id="selector-photography">
+    <div className="module minimised" id="selector-photography">
       <h1>04</h1>
       <h2>Photography</h2>
-      <div className="select" onClick={addActiveClass}>
+      <div className="select" onClick={(e) => addActiveClass(e, "photography")}>
         open
       </div>
       <div className="scroll-area">

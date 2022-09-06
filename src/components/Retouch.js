@@ -1,26 +1,8 @@
 import React from "react";
 import Project from "./Project";
+import addActiveClass from "./addActiveClass";
 
 function Retouch() {
-  function addActiveClass(e) {
-    let modules = document.getElementsByClassName("module");
-    let thisModule = document.getElementById("selector-retouch");
-    for (let module of modules) {
-      module.setAttribute("class", "module minimised");
-    }
-    thisModule.setAttribute("class", "module active");
-    let selectors = document.getElementsByClassName("select");
-    for (let selector of selectors) {
-      selector.setAttribute("class", "select");
-    }
-    e.target.setAttribute("class", "select hidden");
-
-    let scrollareas = document.getElementsByClassName("scroll-area");
-    for (let scrollarea of scrollareas) {
-      scrollarea.setAttribute("class", "scroll-area hidden");
-    }
-    thisModule.lastChild.setAttribute("class", "scroll-area");
-  }
 
   const MJ1Project = [
     { imgURL: "/assets/img/MJ1/1.jpg", key: "1" },
@@ -58,10 +40,10 @@ function Retouch() {
   ];
 
   return (
-    <div className="module" id="selector-retouch">
+    <div className="module minimised" id="selector-retouch">
       <h1>03</h1>
       <h2>Retouch</h2>
-      <div className="select" onClick={addActiveClass}>
+      <div className="select" onClick={(e) => addActiveClass(e, "retouch")}>
         open
       </div>
       <div className="scroll-area">

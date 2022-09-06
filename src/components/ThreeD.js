@@ -1,28 +1,9 @@
 import React from "react";
 import Project from "./Project";
 import Video from "./Video";
+import addActiveClass from "./addActiveClass";
 
 function ThreeD() {
-  function addActiveClass(e) {
-    let modules = document.getElementsByClassName("module");
-    let thisModule = document.getElementById("selector-3d");
-    for (let module of modules) {
-      module.setAttribute("class", "module minimised");
-    }
-    thisModule.setAttribute("class", "module active");
-    let selectors = document.getElementsByClassName("select");
-    for (let selector of selectors) {
-      selector.setAttribute("class", "select");
-    }
-    e.target.setAttribute("class", "select hidden");
-
-    let scrollareas = document.getElementsByClassName("scroll-area");
-    for (let scrollarea of scrollareas) {
-      scrollarea.setAttribute("class", "scroll-area hidden");
-    }
-    thisModule.lastChild.setAttribute("class", "scroll-area");
-  }
-
   const DinerProject = [
     { imgURL: "/assets/img/DNR/2.png" },
     { imgURL: "/assets/img/DNR/5.png" },
@@ -43,10 +24,10 @@ function ThreeD() {
   ];
 
   return (
-    <div className="module" id="selector-3d">
+    <div className="module minimised" id="selector-3d">
       <h1>05</h1>
       <h2>3D</h2>
-      <div className="select" onClick={addActiveClass}>
+      <div className="select" onClick={(e) => addActiveClass(e, "3d")}>
         open
       </div>
       <div className="scroll-area">

@@ -4,16 +4,17 @@ import Frontend from "./Frontend";
 import Photography from "./Photography";
 import ThreeD from "./ThreeD";
 import Retouch from "./Retouch";
+import Hamburger from "./Hamburger";
 
-function App(props) {
+function App() {
   return (
-    <main className="default">
+    <main>
       <About />
       <Frontend />
       <Retouch />
       <Photography />
       <ThreeD />
-      
+      <Hamburger/>
     </main>
   );
 }

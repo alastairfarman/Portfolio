@@ -9,7 +9,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-main.default {
+main {
   font-family: Inter;
   display: flex;
   justify-content: space-evenly;
@@ -21,7 +21,7 @@ h1 {
   font-family: BN-Shade;
   font-size: 6vw;
   transition: all ease-in-out 1s;
-  border-bottom: solid 8px #2694b2;
+  border-bottom: solid 0.5rem #2694b2;
 }
 
 .minimised h1 {
@@ -55,6 +55,10 @@ summary {
 }
 
 summary::marker {
+  color: #2a2b2a;
+}
+
+details:hover summary::marker {
   color: #2694b2;
 }
 
@@ -104,7 +108,7 @@ hr {
   justify-content: space-between;
   padding: 1rem;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
 }
 
 .select {
@@ -265,9 +269,85 @@ hr {
   inherits: false;
 }
 
+#hamburger {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .module:not(.active) {
     display: none;
+  }
+
+  #hamburger {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    padding: 0.5rem;
+    background-color: rgba(245, 245, 245, 0.95);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  #hamburger ul {
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #hamburger > ul > li {
+    list-style: none;
+    margin: 1rem;
+  }
+
+  #hamburger.closed {
+    width: 1rem;
+    height: 1rem;
+    background: linear-gradient(
+      to bottom,
+      #2a2b2a,
+      #2a2b2a 20%,
+      rgba(0,0,0,0) 20%,
+      rgba(0,0,0,0) 40%,
+      #2a2b2a 40%,
+      #2a2b2a 60%,
+      rgba(0,0,0,0) 60%,
+      rgba(0,0,0,0) 80%,
+      #2a2b2a 80%,
+      #2a2b2a 100%
+    );
+    box-shadow:  0 0 0 100vmax rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
+
+  #hamburger.closed:hover {
+    background: linear-gradient(
+      to bottom,
+      #2694b2,
+      #2694b2 20%,
+      rgba(0,0,0,0) 20%,
+      rgba(0,0,0,0) 40%,
+      #2694b2 40%,
+      #2694b2 60%,
+      rgba(0,0,0,0) 60%,
+      rgba(0,0,0,0) 80%,
+      #2694b2 80%,
+      #2694b2 100%
+    );
+  }
+
+  #hamburger.closed li {
+    margin: 0;
+    font-size: 0;
+  }
+
+  #hamburger li:hover {
+    border-bottom: solid 5px #2694b2;
+    margin-bottom: -5px;
+    cursor: pointer;
+  }
+
+  #hamburger ul li:last-child:hover{
+    margin-bottom: 0.7rem;
   }
 
   .scroll-area {
