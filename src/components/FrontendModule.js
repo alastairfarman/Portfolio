@@ -8,7 +8,7 @@ export default function FrontendModule(props) {
         <img src={item.imgURL} alt="" />
         <p>{item.desc}</p>
         <div className="frontend-links">
-          <a href={item.liveURL} target="_blank" rel="noreferrer"><img className="github-logo" src="/assets/img/frontend/GitHub_Logo.png" alt="GitHub"/></a>
+          <a href={item.liveURL} target="_blank" rel="noreferrer"><img className="github-logo" src="./assets/img/frontend/GitHub_Logo.png" alt="GitHub"/></a>
         </div>
       </div>
     );
