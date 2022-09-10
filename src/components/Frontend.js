@@ -3,6 +3,15 @@ import FrontendModule from "./FrontendModule";
 import addActiveClass from "./addActiveClass";
 
 const FrontendProjects = [
+
+  {
+    name: "Not-a-Porter",
+    desc: "A work in progress Net-a-Porter clone with filter functionality and more to come",
+    imgURL: "./assets/img/frontend/nap.png",
+    liveURL: "https://alastairfarman.github.io/not-a-porter/",
+    projectURL: "github.com/af/pj",
+  },
+
   {
     name: "eCommerce",
     desc: "React.js built mock eCom site with functional basket and JavaScript product spinner",
@@ -13,7 +22,7 @@ const FrontendProjects = [
 
   {
     name: "WhatsApp Burn Text",
-    desc: "Recreating WhatsApp UI and experimenting with JS for digital interpretation of a 'burn letter' ",
+    desc: "Recreating WhatsApp UI and experimenting with JS for digital interpretation of a 'burn letter'",
     imgURL: "./assets/img/frontend/whts.png",
     liveURL: "github.com/af",
     projectURL: "https://alastairfarman.github.io/NoText/",
