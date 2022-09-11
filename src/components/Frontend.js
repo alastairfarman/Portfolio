@@ -24,7 +24,7 @@ const FrontendProjects = [
     name: "WhatsApp Burn Text",
     desc: "Recreating WhatsApp UI and experimenting with JS for digital interpretation of a 'burn letter'",
     imgURL: "./assets/img/frontend/whts.png",
-    liveURL: "github.com/af",
+    liveURL: "https://alastairfarman.github.io/NoText/",
     projectURL: "https://alastairfarman.github.io/NoText/",
   },
   {

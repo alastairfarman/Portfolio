@@ -223,6 +223,7 @@ hr {
 
 .frontend-module > img {
   padding: 1rem;
+  background-color: none;
 }
 
 .frontend {
