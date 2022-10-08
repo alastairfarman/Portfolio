@@ -5,6 +5,22 @@ import addActiveClass from "./addActiveClass";
 const FrontendProjects = [
 
   {
+    name: "Bearbrick JS Test",
+    desc: "An interactive bear selector page testing javascript scroll and hover interactions",
+    imgURL: "./assets/img/frontend/bb.png",
+    liveURL: "https://alastairfarman.github.io/bearbrick-js/",
+    projectURL: "github.com/af/pj",
+  },
+
+  {
+    name: "Alt portfolio",
+    desc: "Testing a more interactive one page portfolio and alternative implementations",
+    imgURL: "./assets/img/frontend/temp.png",
+    liveURL: "https://alastairfarman.github.io/bearbrick-js/",
+    projectURL: "github.com/af/pj",
+  },
+
+  {
     name: "Not-a-Porter",
     desc: "A work in progress Net-a-Porter clone with filter functionality and more to come",
     imgURL: "./assets/img/frontend/nap.png",
