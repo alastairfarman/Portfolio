@@ -8,7 +8,7 @@ const FrontendProjects = [
     name: "Bearbrick JS Test",
     desc: "An interactive bear selector page testing javascript scroll and hover interactions",
     imgURL: "./assets/img/frontend/bb.png",
-    liveURL: "https://alastairfarman.github.io/bearbrick-js/",
+    liveURL: "https://alastairfarman.github.io/bearbrick-jstest/",
     projectURL: "github.com/af/pj",
   },
 
